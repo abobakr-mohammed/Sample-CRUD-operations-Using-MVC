@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("Add New", "Create", "Home", new { @class = "btn btn-primary" })
+<br />
+<br />
+<br />
+<table class="table table-bordered table-dark table-hover table-striped" >
+    <tr>
+
+        <th>  @Html.DisplayNameFor(ww => ww.ID)</th>
+        <th>  @Html.DisplayNameFor(ww => ww.FName)</th>
+        <th>  @Html.DisplayNameFor(ww => ww.LName)</th>
+        <th>  @Html.DisplayNameFor(ww => ww.Age)</th>
+        <th>  @Html.DisplayNameFor(ww => ww.Adddress)</th>
+        <th>  @Html.DisplayNameFor(ww => ww.DOB)</th>
+        <th>  @Html.DisplayNameFor(ww => ww.DeptID)</th>
+        <th>  @Html.DisplayNameFor(ww => ww.Email)</th>
+        <th>  @Html.DisplayNameFor(ww => ww.Url)</th>
+        <th>  Action</th>
+    </tr>
+    @foreach(var item in Model)
+            {
+               <tr>
+                   <td>@Html.DisplayFor(ww => item.ID)</td>
+                   <td>@Html.DisplayFor(ww => item.FName)</td>
+                   <td>@Html.DisplayFor(ww => item.LName)</td>
+                   <td>@Html.DisplayFor(ww => item.Age)</td>
+                   <td>@Html.DisplayFor(ww => item.Adddress)</td>
+                   <td>@Html.DisplayFor(ww => item.DOB)</td>
+                   <td>@Html.DisplayFor(ww => item.DeptID)</td>
+                   <td>@Html.DisplayFor(ww => item.Email)</td>
+                   <td>@Html.DisplayFor(ww => item.Url)</td>
+                   <td>
+                       @Html.ActionLink("Edit", "Edit", "Home",routeValues:new {id = item.ID }, htmlAttributes: new { @class = "btn btn-success" })
+                       @Html.ActionLink("Delete", "Delete", "Home",routeValues: new {id = item.ID }, htmlAttributes: new { @class = "btn btn-danger", Onclick=$"return confirm('Are you sure delete {item.FName} {item.LName}' );"})
+                   </td>
+               </tr>
+            }
+   
+</table>

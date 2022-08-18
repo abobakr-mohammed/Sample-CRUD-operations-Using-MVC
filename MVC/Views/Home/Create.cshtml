@@ -1,0 +1,125 @@
+﻿@model  Employee
+@{
+    ViewBag.Title = "Create";
+
+
+}
+
+<h2>Create</h2>
+
+@Html.Partial("CreateAndEdit")
+
+@*@using (Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.FName, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.FName, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.FName, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.LName, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.LName, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.LName, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.Age, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.Age, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.FName, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.Adddress, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.Adddress, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.Adddress, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.Email, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.Email, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.Email, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.Url, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.Url, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.Url, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.Salary, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.Salary, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.Salary, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.Password, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.Password, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.Password, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.CPassword, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.CPassword, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.CPassword, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.DOB, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.EditorFor(ww => ww.DOB, additionalViewData: new { HtmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(ww => ww.DOB, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        @Html.LabelFor(ww => ww.DeptID, htmlAttributes: new { @class = "col-sm-2 col-form-label" })
+
+        <div class="col-sm-10">
+            @Html.DropDownListFor(ww => ww.DeptID, ViewBag.depts as SelectList, htmlAttributes: new { @class = "form-select" })
+            @Html.ValidationMessageFor(ww => ww.DeptID, "", htmlAttributes: new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <input type="submit" class="btn btn-primary" />
+}*@
